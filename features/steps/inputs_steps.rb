@@ -2,10 +2,9 @@ Dado("que acesso a tela Botões de Radio") do
     @nav.tap_hamburger
     @nav.tap_by_text("INPUTS")
     @nav.tap_by_text("BOTÕES DE RADIO")
-  end
+end
 
-
-  Dado("que acesso a tela Botões de Checkbox") do
+Dado("que acesso a tela Botões de Checkbox") do
     @nav.tap_hamburger
     @nav.tap_by_text("INPUTS")
     @nav.tap_by_text("CHECKBOX")
@@ -21,9 +20,7 @@ Quando("eu marco as opções {string} e {string}") do |target1, target2|
   find_element(xpath: @first_locator).click
 
   @second_locator = "//android.widget.CheckBox[contains(@text, '#{target2}')]"
-  find_element(xpath: @second_locator).click
-  sleep 3
-  
+  find_element(xpath: @second_locator).click  
 end
   
 Então("esta opção deve ser marcada") do
@@ -34,8 +31,6 @@ end
 Então("as opções devem ser marcadas") do
   @first_result = find_element(xpath: @first_locator)
   @second_result = find_element(xpath: @second_locator)
-  sleep 8
-
   expect(@first_result.checked).to eql "true"
   expect(@second_result.checked).to eql "true"
 end
