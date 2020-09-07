@@ -16,7 +16,8 @@ Quando('eu clico no botão de clique simples') do
 end
 
 Quando('eu pressiono o botão de clique longo') do
-  button = "//android.widget.Button[@text='CLIQUE AQUI']"
+  @button_locator = "//android.widget.Button[@text='CLIQUE AQUI']"
+  btn_action = find_element(xpath: @button_locator)
   touch_action.long_press(button).perform
   sleep 5
 end

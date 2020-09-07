@@ -10,4 +10,8 @@ class LoginScreen
         find_element(xpath: "//android.widget.Toast")
     end
 
+    def alert
+        find_element(id: "io.qaninja.android.twp:id/textinput_error")
+    end
+
 end

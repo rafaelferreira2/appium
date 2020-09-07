@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Login
+Funcionalidade: Cadastro
 
     Cenario: Login com sucesso
 
