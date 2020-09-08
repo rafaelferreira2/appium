@@ -4,6 +4,7 @@ Before do
 
   @nav = Navigator.new
   @login = LoginScreen.new
+  @dialog = DialogScreen.new
 
   find_element(xpath: "//android.widget.Button[@text='COMEÇAR']").click
 end
