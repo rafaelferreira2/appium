@@ -18,11 +18,11 @@ end
 Quando('eu pressiono o botão de clique longo') do
   @button_locator = "//android.widget.Button[@text='CLIQUE AQUI']"
   btn_action = find_element(xpath: @button_locator)
-  touch_action.long_press(button).perform
+  btn_action.long_press
   sleep 5
 end
 
-Então("O botão deve apresentar o texto") do |txt_botao|
+Então("O botão deve apresentar o texto {string}") do |txt_botao|
   @radio_result = find_element(xpath: @radio_locator)
   expect(@radio_result.checked).to eql "true"
 end
