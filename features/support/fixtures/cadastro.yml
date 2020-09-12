@@ -1,0 +1,20 @@
+dev:
+  nome: "Nome do DEV"
+  email: "dev@test.com"
+  senha: "teste123"
+  perfil: "Desenvolvedor"
+qa:
+  nome: "Nome do QA"
+  email: "qa@test.com"
+  senha: "teste123"
+  perfil: "QA"
+devops:
+  nome: "Nome do DEVOPS"
+  email: "devops@test.com"
+  senha: "teste123"
+  perfil: "DevOps"
+ux:
+  nome: "Nome do UX"
+  email: "ux@test.com"
+  senha: "teste123"
+  perfil: "UX"

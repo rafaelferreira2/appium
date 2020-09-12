@@ -7,11 +7,15 @@ Funcionalidade: Cadastro
     Cenario: Cadastro com sucesso
 
         Dado que acesso a tela de cadastro
-        Quando submeto minhas informações:
-            |nome|Rafael Ferreira|
-            |email|sf.rafael20@gmail.com|
-            |senha|teste652|
+        Quando submeto as informações da pessoa <pessoa>
         Então devo ver a notificação: "Tudo certo, recebemos seus dados!"
+
+        Exemplos:
+        | pessoa   |
+        | "dev"    |
+        | "qa"     |
+        | "devops" |
+        | "ux"     |
 
     @nome_null
     Cenario: Nome em branco
