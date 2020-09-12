@@ -1,16 +1,26 @@
 ---
 Capitao:
   nome: "Capitão América"
+  tag: "@steverogers"
   descricao: "Humano geneticamente modificado com soro do super soldado."
+  personal: "Steve Rogers"
 Thor:
   nome: "Thor"
+  tag: "@thor"
   descricao: "Deus do Trovão, príncipe herdeiro de Asgard."
+  personal: "Deus do Trovão"
 Iron:
   nome: "Homem de Ferro"
+  tag: "@stark"
   descricao: "Vingador Dourado. Gênio, bilionário, playboy, filantropo."
+  personal: "Tony Stark"
 Hulk:
   nome: "Hulk"
+  tag: "@brucebanner"
   descricao: "Físico nuclear especializado em partículas e raios gama."
+  personal: "Bruce Banner"
 Aranha:
   nome: "Homem Aranha"
+  tag: "@spiderman"
   descricao: "Inventor, Fotógrafo, Vigilante e amigo da vizinhança."
+  personal: "Peter Parker"

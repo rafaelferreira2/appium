@@ -3,7 +3,7 @@
 Funcionalidade: Avengers
 
     @lista
-    Esquema do Cenario: Lista
+    Esquema do Cenario: Lista toque nome
 
         Dado que acesso a tela lista de heróis
         Quando eu clico no heroi <heroi>
@@ -19,8 +19,17 @@ Funcionalidade: Avengers
 
 
     @busca
-    Cenario: Busca
+    Esquema do Cenario: Busca
 
-        Dado que acesso a tela de busca
-        Quando eu busco por ""
-        Então O botão deve apresentar o texto "CLIQUE LONGO OK"
+        Dado que acesso a tela de busca de herois
+        Quando eu busco pelo heroi <heroi>
+        Então devo ver o nome do heroi
+        E o nome pessoal do heroi
+
+        Exemplos:
+        | heroi     |
+        | "Capitao" |
+        | "Thor"    |
+        | "Iron"    |
+        | "Hulk"    |
+        | "Aranha"  |
