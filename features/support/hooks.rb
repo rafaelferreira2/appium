@@ -6,6 +6,7 @@ Before do
   @login = LoginScreen.new
   @dialog = DialogScreen.new
   @cadastro = CadastroScreen.new
+  @listaHerois = ListaHeroisScreen.new
 
   find_element(xpath: "//android.widget.Button[@text='COMEÇAR']").click
 end

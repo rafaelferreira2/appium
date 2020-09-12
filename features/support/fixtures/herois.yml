@@ -1,0 +1,16 @@
+---
+Capitao:
+  nome: "Capitão América"
+  descricao: "Humano geneticamente modificado com soro do super soldado."
+Thor:
+  nome: "Thor"
+  descricao: "Deus do Trovão, príncipe herdeiro de Asgard."
+Iron:
+  nome: "Homem de Ferro"
+  descricao: "Vingador Dourado. Gênio, bilionário, playboy, filantropo."
+Hulk:
+  nome: "Hulk"
+  descricao: "Físico nuclear especializado em partículas e raios gama."
+Aranha:
+  nome: "Homem Aranha"
+  descricao: "Inventor, Fotógrafo, Vigilante e amigo da vizinhança."
