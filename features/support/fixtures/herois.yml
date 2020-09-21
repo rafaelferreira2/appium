@@ -4,23 +4,48 @@ Capitao:
   tag: "@steverogers"
   descricao: "Humano geneticamente modificado com soro do super soldado."
   personal: "Steve Rogers"
+  swipe:
+    start_x: "0.93"
+    start_y: "0.18"
+    offset_x: "0.48"
+    offset_y: "0.18"   
 Thor:
   nome: "Thor"
   tag: "@thor"
   descricao: "Deus do Trovão, príncipe herdeiro de Asgard."
   personal: "Deus do Trovão"
+  swipe:
+    start_x: "0.93"
+    start_y: "0.32"
+    offset_x: "0.48"
+    offset_y: "0.32"   
 Iron:
   nome: "Homem de Ferro"
   tag: "@stark"
   descricao: "Vingador Dourado. Gênio, bilionário, playboy, filantropo."
   personal: "Tony Stark"
+  swipe:
+    start_x: "0.93"
+    start_y: "0.46"
+    offset_x: "0.48"
+    offset_y: "0.46" 
 Hulk:
   nome: "Hulk"
   tag: "@brucebanner"
   descricao: "Físico nuclear especializado em partículas e raios gama."
   personal: "Bruce Banner"
+  swipe:
+    start_x: "0.93"
+    start_y: "0.61"
+    offset_x: "0.48"
+    offset_y: "0.61" 
 Aranha:
   nome: "Homem Aranha"
   tag: "@spiderman"
   descricao: "Inventor, Fotógrafo, Vigilante e amigo da vizinhança."
   personal: "Peter Parker"
+  swipe:
+    start_x: "0.93"
+    start_y: "0.75"
+    offset_x: "0.48"
+    offset_y: "0.75"

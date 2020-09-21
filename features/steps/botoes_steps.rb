@@ -11,18 +11,16 @@ Dado('que acesso a tela de clique longo') do
 end
   
 Quando('eu clico no botão de clique simples') do
-  button = "//android.widget.Button[@text='CLIQUE AQUI']"
-  find_element(xpath: button).click
+  find_element(id: "io.qaninja.android.twp:id/short_click").click
 end
 
 Quando('eu pressiono o botão de clique longo') do
-  @button_locator = "//android.widget.Button[@text='CLIQUE AQUI']"
-  btn_action = find_element(xpath: @button_locator)
-  btn_action.long_press
-  sleep 5
+  @button_locator = "io.qaninja.android.twp:id/long_click"
+  button = find_element(:id, @button_locator)
+  Appium::TouchAction::new.press(element: button).wait(3000).release.perform
 end
 
 Então("O botão deve apresentar o texto {string}") do |txt_botao|
-  @radio_result = find_element(xpath: @radio_locator)
-  expect(@radio_result.checked).to eql "true"
+  btn_text = find_element(id: @button_locator).text
+  expect(btn_text).to eql "CLIQUE LONGO OK"
 end

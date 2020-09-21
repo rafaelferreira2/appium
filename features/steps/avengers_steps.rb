@@ -40,3 +40,34 @@ Então("o nome pessoal do heroi") do
     nome_pessoal = @buscaHerois.nome_pessoal_heroi
     expect(nome_pessoal).to eql @heroi_alvo["personal"]    
 end
+
+Quando('apago o heroi {string}') do |heroi|
+
+    herois = YAML.load_file(File.join(Dir.pwd, "features/support/fixtures/herois.yml"))
+    heroi_alvo = herois["#{heroi}"]
+
+    # start_X  = positão inicial na horizontal
+    # start_y  = positão inicial na vertical
+    # offset_x = positão final na horizontal
+    # offset_Y = positão final na vertical
+    # duration = duração em milisegundos
+
+    # Checkpoint pra garantir que está na tela correta
+    find_element(id: "io.qaninja.android.twp:id/rvList")
+
+    # coord = { start_x: 0.93, start_y: 0.18, offset_x: 0.48, offset_y: 0.18, duration: 2000 }
+    coordenada_heroi = { 
+        start_x: heroi_alvo["swipe"]["start_x"], start_y: heroi_alvo["swipe"]["start_y"],
+        offset_x: heroi_alvo["swipe"]["offset_x"], offset_y: heroi_alvo["swipe"]["offset_y"], duration: 2000 
+    }
+
+    Appium::TouchAction::new.swipe(coordenada_heroi).perform
+
+    find_element(id: "io.qaninja.android.twp:id/btnRemove").click
+end
+
+Então('devo ver a seguinte mensagem: {string}') do |texto_esperado|
+    texto_encontrado = find_element(id: "io.qaninja.android.twp:id/snackbar_text").text
+    # expect(texto_encontrado).to eql texto_esperado
+    expect(texto_encontrado).to start_with texto_esperado
+end

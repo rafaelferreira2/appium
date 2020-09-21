@@ -10,7 +10,7 @@ Quando("submeto minhas credenciais:") do |table|
 end
   
 Então("devo ver a notificação: {string}") do |notice|
-    expect(@login.toast.text).to eql notice
+    expect(@toaster.toast.text).to eql notice
 end
 
 Então("devo ver o alerta: {string}") do |notice|

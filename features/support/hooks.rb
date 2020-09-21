@@ -3,6 +3,7 @@ Before do
   driver.manage.timeouts.implicit_wait = 10
 
   @nav = Navigator.new
+  @toaster = Toaster.new
   @login = LoginScreen.new
   @dialog = DialogScreen.new
   @cadastro = CadastroScreen.new
